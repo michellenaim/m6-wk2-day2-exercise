@@ -85,10 +85,8 @@ export const {
 
 export default todosSlice.reducer
 
-export const {
-  selectAll: selectTodos,
-  selectById: selectTodoById,
-} = todosAdapter.getSelectors((state) => state.todos)
+export const { selectAll: selectTodos, selectById: selectTodoById } =
+  todosAdapter.getSelectors((state) => state.todos)
 
 export const selectTodoIds = createSelector(
   // First, pass one or more "input selector" functions:
